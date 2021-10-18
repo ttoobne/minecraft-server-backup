@@ -1,0 +1,360 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 357892096 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2830), pid=8167, tid=8168
+#
+# JRE version:  (16.0.1+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (16.0.1+9, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, serial gc, linux-amd64)
+# No core dump will be written. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -XX:ErrorFile=/opt/minecraft/server/err/hs_err_pidminecraft.log -Xmx1536M -Xms1024M server.jar nogui
+
+Host: Intel(R) Xeon(R) Platinum 8255C CPU @ 2.50GHz, 1 cores, 1G, CentOS Linux release 7.6.1810 (Core) 
+Time: Wed Aug 18 09:45:21 2021 CST elapsed time: 0.008120 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f939400fbd0):  JavaThread "Unknown thread" [_thread_in_vm, id=8168, stack(0x00007f939e685000,0x00007f939e786000)]
+
+Stack: [0x00007f939e685000,0x00007f939e786000],  sp=0x00007f939e784490,  free space=1021k
+Native frames: (J=compiled Java code, A=aot compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0xf22187]  VMError::report_and_die(int, char const*, char const*, __va_list_tag*, Thread*, unsigned char*, void*, void*, char const*, int, unsigned long)+0x357
+V  [libjvm.so+0xf22c7b]  VMError::report_and_die(Thread*, char const*, int, unsigned long, VMErrorType, char const*, __va_list_tag*)+0x2b
+V  [libjvm.so+0x61b306]  report_vm_out_of_memory(char const*, int, unsigned long, VMErrorType, char const*, ...)+0xd6
+V  [libjvm.so+0xc1258a]  os::pd_commit_memory(char*, unsigned long, unsigned long, bool)+0xda
+V  [libjvm.so+0xc0aebe]  os::commit_memory(char*, unsigned long, unsigned long, bool)+0x2e
+V  [libjvm.so+0xf1b3db]  VirtualSpace::expand_by(unsigned long, bool)+0x15b
+V  [libjvm.so+0x7b5901]  Generation::Generation(ReservedSpace, unsigned long)+0xb1
+V  [libjvm.so+0x620465]  DefNewGeneration::DefNewGeneration(ReservedSpace, unsigned long, unsigned long, unsigned long, char const*)+0x35
+V  [libjvm.so+0x7b60d2]  GenerationSpec::init(ReservedSpace, CardTableRS*)+0xc2
+V  [libjvm.so+0x7a1732]  GenCollectedHeap::initialize()+0x1c2
+V  [libjvm.so+0xed3eab]  universe_init()+0xdb
+V  [libjvm.so+0x815b56]  init_globals()+0x36
+V  [libjvm.so+0xea7880]  Threads::create_vm(JavaVMInitArgs*, bool*)+0x2b0
+V  [libjvm.so+0x8da471]  JNI_CreateJavaVM+0x61
+C  [libjli.so+0x3869]  JavaMain+0x99
+C  [libjli.so+0x7e59]  ThreadJavaMain+0x9
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007f939d959660, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00007f939400fbd0 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=8168, stack(0x00007f939e685000,0x00007f939e786000)]
+
+Threads with active compile tasks:
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x00000000a0000000, size: 1536 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 0.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Empty>
+
+Heap:
+
+[error occurred during error reporting (printing heap information), id 0xb, SIGSEGV (0xb) at pc=0x00007f939d0bce8e]
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (2 events):
+Event: 0.002 Protecting memory [0x00007f939e685000,0x00007f939e689000] with protection modes 0
+Event: 0.002 Loaded shared library /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjava.so
+
+
+Dynamic libraries:
+b5550000-100000000 ---p 00000000 00:00 0 
+56122e978000-56122e979000 r-xp 00000000 fd:01 1185254                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/bin/java
+56122eb79000-56122eb7a000 r--p 00001000 fd:01 1185254                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/bin/java
+56122eb7a000-56122eb7b000 rw-p 00002000 fd:01 1185254                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/bin/java
+561230864000-561230885000 rw-p 00000000 00:00 0                          [heap]
+7f937c43e000-7f937c6ae000 rwxp 00000000 00:00 0 
+7f937c6ae000-7f937c9cd000 ---p 00000000 00:00 0 
+7f937c9cd000-7f937cc3d000 rwxp 00000000 00:00 0 
+7f937cc3d000-7f9383f05000 ---p 00000000 00:00 0 
+7f9383f05000-7f9384175000 rwxp 00000000 00:00 0 
+7f9384175000-7f938b43e000 ---p 00000000 00:00 0 
+7f938b43e000-7f9394000000 r--s 00000000 fd:01 1185629                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/modules
+7f9394000000-7f9394031000 rw-p 00000000 00:00 0 
+7f9394031000-7f9398000000 ---p 00000000 00:00 0 
+7f939ace7000-7f939b0cc000 rw-p 00000000 00:00 0 
+7f939b0cc000-7f939b3cc000 ---p 00000000 00:00 0 
+7f939b3cc000-7f939b3d2000 rw-p 00000000 00:00 0 
+7f939b3d2000-7f939b4b8000 ---p 00000000 00:00 0 
+7f939b4b8000-7f939b4bd000 rw-p 00000000 00:00 0 
+7f939b4bd000-7f939b5a3000 ---p 00000000 00:00 0 
+7f939b5a3000-7f939b5c7000 r-xp 00000000 fd:01 1185609                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjava.so
+7f939b5c7000-7f939b7c6000 ---p 00024000 fd:01 1185609                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjava.so
+7f939b7c6000-7f939b7c7000 r--p 00023000 fd:01 1185609                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjava.so
+7f939b7c7000-7f939b7c8000 rw-p 00024000 fd:01 1185609                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjava.so
+7f939b7c8000-7f939b7c9000 rw-p 00000000 00:00 0 
+7f939b7c9000-7f939b7d5000 r-xp 00000000 fd:01 20459                      /usr/lib64/libnss_files-2.17.so
+7f939b7d5000-7f939b9d4000 ---p 0000c000 fd:01 20459                      /usr/lib64/libnss_files-2.17.so
+7f939b9d4000-7f939b9d5000 r--p 0000b000 fd:01 20459                      /usr/lib64/libnss_files-2.17.so
+7f939b9d5000-7f939b9d6000 rw-p 0000c000 fd:01 20459                      /usr/lib64/libnss_files-2.17.so
+7f939b9d6000-7f939b9dc000 rw-p 00000000 00:00 0 
+7f939b9dc000-7f939b9e1000 r-xp 00000000 fd:01 1185612                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjimage.so
+7f939b9e1000-7f939bbe0000 ---p 00005000 fd:01 1185612                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjimage.so
+7f939bbe0000-7f939bbe1000 r--p 00004000 fd:01 1185612                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjimage.so
+7f939bbe1000-7f939bbe2000 rw-p 00005000 fd:01 1185612                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjimage.so
+7f939bbe2000-7f939bbf7000 r-xp 00000000 fd:01 3501                       /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f939bbf7000-7f939bdf6000 ---p 00015000 fd:01 3501                       /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f939bdf6000-7f939bdf7000 r--p 00014000 fd:01 3501                       /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f939bdf7000-7f939bdf8000 rw-p 00015000 fd:01 3501                       /usr/lib64/libgcc_s-4.8.5-20150702.so.1
+7f939bdf8000-7f939bef9000 r-xp 00000000 fd:01 20453                      /usr/lib64/libm-2.17.so
+7f939bef9000-7f939c0f8000 ---p 00101000 fd:01 20453                      /usr/lib64/libm-2.17.so
+7f939c0f8000-7f939c0f9000 r--p 00100000 fd:01 20453                      /usr/lib64/libm-2.17.so
+7f939c0f9000-7f939c0fa000 rw-p 00101000 fd:01 20453                      /usr/lib64/libm-2.17.so
+7f939c0fa000-7f939c1e3000 r-xp 00000000 fd:01 5035                       /usr/lib64/libstdc++.so.6.0.19
+7f939c1e3000-7f939c3e3000 ---p 000e9000 fd:01 5035                       /usr/lib64/libstdc++.so.6.0.19
+7f939c3e3000-7f939c3eb000 r--p 000e9000 fd:01 5035                       /usr/lib64/libstdc++.so.6.0.19
+7f939c3eb000-7f939c3ed000 rw-p 000f1000 fd:01 5035                       /usr/lib64/libstdc++.so.6.0.19
+7f939c3ed000-7f939c402000 rw-p 00000000 00:00 0 
+7f939c402000-7f939d620000 r-xp 00000000 fd:01 1185640                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/server/libjvm.so
+7f939d620000-7f939d820000 ---p 0121e000 fd:01 1185640                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/server/libjvm.so
+7f939d820000-7f939d8d4000 r--p 0121e000 fd:01 1185640                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/server/libjvm.so
+7f939d8d4000-7f939d908000 rw-p 012d2000 fd:01 1185640                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/server/libjvm.so
+7f939d908000-7f939d963000 rw-p 00000000 00:00 0 
+7f939d963000-7f939db27000 r-xp 00000000 fd:01 3909                       /usr/lib64/libc-2.17.so
+7f939db27000-7f939dd26000 ---p 001c4000 fd:01 3909                       /usr/lib64/libc-2.17.so
+7f939dd26000-7f939dd2a000 r--p 001c3000 fd:01 3909                       /usr/lib64/libc-2.17.so
+7f939dd2a000-7f939dd2c000 rw-p 001c7000 fd:01 3909                       /usr/lib64/libc-2.17.so
+7f939dd2c000-7f939dd31000 rw-p 00000000 00:00 0 
+7f939dd31000-7f939dd33000 r-xp 00000000 fd:01 20451                      /usr/lib64/libdl-2.17.so
+7f939dd33000-7f939df33000 ---p 00002000 fd:01 20451                      /usr/lib64/libdl-2.17.so
+7f939df33000-7f939df34000 r--p 00002000 fd:01 20451                      /usr/lib64/libdl-2.17.so
+7f939df34000-7f939df35000 rw-p 00003000 fd:01 20451                      /usr/lib64/libdl-2.17.so
+7f939df35000-7f939df4c000 r-xp 00000000 fd:01 3935                       /usr/lib64/libpthread-2.17.so
+7f939df4c000-7f939e14b000 ---p 00017000 fd:01 3935                       /usr/lib64/libpthread-2.17.so
+7f939e14b000-7f939e14c000 r--p 00016000 fd:01 3935                       /usr/lib64/libpthread-2.17.so
+7f939e14c000-7f939e14d000 rw-p 00017000 fd:01 3935                       /usr/lib64/libpthread-2.17.so
+7f939e14d000-7f939e151000 rw-p 00000000 00:00 0 
+7f939e151000-7f939e160000 r-xp 00000000 fd:01 1185613                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjli.so
+7f939e160000-7f939e35f000 ---p 0000f000 fd:01 1185613                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjli.so
+7f939e35f000-7f939e360000 r--p 0000e000 fd:01 1185613                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjli.so
+7f939e360000-7f939e361000 rw-p 0000f000 fd:01 1185613                    /usr/lib/jvm/java-16-openjdk-16.0.1.0.9-3.rolling.el7.x86_64/lib/libjli.so
+7f939e361000-7f939e376000 r-xp 00000000 fd:01 4230                       /usr/lib64/libz.so.1.2.7
+7f939e376000-7f939e575000 ---p 00015000 fd:01 4230                       /usr/lib64/libz.so.1.2.7
+7f939e575000-7f939e576000 r--p 00014000 fd:01 4230                       /usr/lib64/libz.so.1.2.7
+7f939e576000-7f939e577000 rw-p 00015000 fd:01 4230                       /usr/lib64/libz.so.1.2.7
+7f939e577000-7f939e599000 r-xp 00000000 fd:01 3499                       /usr/lib64/ld-2.17.so
+7f939e678000-7f939e67e000 rw-p 00000000 00:00 0 
+7f939e67e000-7f939e685000 ---p 00000000 00:00 0 
+7f939e685000-7f939e689000 ---p 00000000 00:00 0 
+7f939e689000-7f939e78c000 rw-p 00000000 00:00 0 
+7f939e78c000-7f939e794000 rw-s 00000000 fd:01 1191197                    /tmp/hsperfdata_minecraft/8167
+7f939e794000-7f939e795000 ---p 00000000 00:00 0 
+7f939e795000-7f939e796000 r--p 00000000 00:00 0 
+7f939e796000-7f939e797000 ---p 00000000 00:00 0 
+7f939e797000-7f939e798000 rw-p 00000000 00:00 0 
+7f939e798000-7f939e799000 r--p 00021000 fd:01 3499                       /usr/lib64/ld-2.17.so
+7f939e799000-7f939e79a000 rw-p 00022000 fd:01 3499                       /usr/lib64/ld-2.17.so
+7f939e79a000-7f939e79b000 rw-p 00000000 00:00 0 
+7ffc9eb78000-7ffc9eb99000 rw-p 00000000 00:00 0                          [stack]
+7ffc9ebc2000-7ffc9ebc4000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+
+
+VM Arguments:
+jvm_args: -XX:ErrorFile=/opt/minecraft/server/err/hs_err_pidminecraft.log -Xmx1536M -Xms1024M 
+java_command: server.jar nogui
+java_class_path (initial): server.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 2                                         {product} {ergonomic}
+    ccstr ErrorFile                                = /opt/minecraft/server/err/hs_err_pidminecraft.log            {product} {command line}
+   size_t InitialHeapSize                          = 1073741824                                {product} {command line}
+   size_t MaxHeapSize                              = 1610612736                                {product} {command line}
+   size_t MaxNewSize                               = 536870912                                 {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 196608                                    {product} {ergonomic}
+   size_t MinHeapSize                              = 1073741824                                {product} {command line}
+   size_t NewSize                                  = 357892096                                 {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5826188                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122916026                              {pd product} {ergonomic}
+   size_t OldSize                                  = 715849728                                 {product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122916026                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 1610612736                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseSerialGC                              = true                                      {product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+SHELL=/bin/bash
+LANG=en_US.utf8
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0xf22ca0], sa_mask[0]=11100100010111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.so+0xf22ca0], sa_mask[0]=11100100010111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.so+0xf22ca0], sa_mask[0]=11100100010111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.so+0xdc3770], sa_mask[0]=11100100010111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.so+0xdc3770], sa_mask[0]=11100100010111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.so+0xf22ca0], sa_mask[0]=11100100010111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR2: [libjvm.so+0xdc2e30], sa_mask[0]=00000000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGINT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGTERM: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGQUIT: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGTRAP: [libjvm.so+0xf22ca0], sa_mask[0]=11100100010111111101111111111110, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+CentOS Linux release 7.6.1810 (Core) 
+uname: Linux 3.10.0-1160.11.1.el7.x86_64 #1 SMP Fri Dec 18 16:34:56 UTC 2020 x86_64
+OS uptime: 60 days 4:11 hours
+libc: glibc 2.17 NPTL 2.17 
+rlimit (soft/hard): STACK 8192k/infinity , CORE 0k/infinity , NPROC 7260/7260 , NOFILE 4096/4096 , AS infinity/infinity , CPU infinity/infinity , DATA infinity/infinity , FSIZE infinity/infinity , MEMLOCK 64k/64k
+load average: 0.00 0.01 0.05
+
+/proc/meminfo:
+MemTotal:        1882008 kB
+MemFree:           63968 kB
+MemAvailable:     219836 kB
+Buffers:           10712 kB
+Cached:           264916 kB
+SwapCached:            0 kB
+Active:          1520756 kB
+Inactive:         131532 kB
+Active(anon):    1385604 kB
+Inactive(anon):      404 kB
+Active(file):     135152 kB
+Inactive(file):   131128 kB
+Unevictable:       10352 kB
+Mlocked:           10352 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               696 kB
+Writeback:             0 kB
+AnonPages:       1387028 kB
+Mapped:            81668 kB
+Shmem:               688 kB
+Slab:              57048 kB
+SReclaimable:      41500 kB
+SUnreclaim:        15548 kB
+KernelStack:        2864 kB
+PageTables:        10096 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      941004 kB
+Committed_AS:    2136004 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:        9292 kB
+VmallocChunk:   34359724540 kB
+Percpu:              164 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     38912 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       81784 kB
+DirectMap2M:     2015232 kB
+DirectMap1G:           0 kB
+
+/sys/kernel/mm/transparent_hugepage/enabled: [always] madvise never
+/sys/kernel/mm/transparent_hugepage/defrag (defrag/compaction efforts parameter): [always] madvise never
+
+Process Memory:
+Virtual Size: 1737276K (peak: 2082780K)
+Resident Set Size: 11760K (peak: 11760K) (anon: 5720K, file: 6040K, shmem: 0K)
+Swapped out: 0K
+C-Heap outstanding allocations: 219K
+
+/proc/sys/kernel/threads-max (system-wide limit on the number of threads): 14521
+/proc/sys/vm/max_map_count (maximum number of memory map areas a process may have): 65530
+/proc/sys/kernel/pid_max (system-wide limit on number of process identifiers): 32768
+
+container (cgroup) information:
+container_type: cgroupv1
+cpu_cpuset_cpus: 0
+cpu_memory_nodes: 0
+active_processor_count: 1
+cpu_quota: no quota
+cpu_period: 100000
+cpu_shares: no shares
+memory_limit_in_bytes: unlimited
+memory_and_swap_limit_in_bytes: unlimited
+memory_soft_limit_in_bytes: unlimited
+memory_usage_in_bytes: 1702600704
+memory_max_usage_in_bytes: 536870912
+
+KVM virtualization detected
+Steal ticks since vm start: 0
+Steal ticks percentage since vm start:  0.000
+
+CPU: total 1 (initial active 1) (1 cores per cpu, 1 threads per core) family 6 model 85 stepping 5 microcode 0x1, cx8, cmov, fxsr, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, avx, avx2, aes, erms, clmul, bmi1, bmi2, rtm, adx, avx512f, avx512dq, avx512cd, avx512bw, avx512vl, fma, vzeroupper, avx512_vnni, clflush, clflushopt, clwb, hv
+CPU Model and flags from /proc/cpuinfo:
+model name	: Intel(R) Xeon(R) Platinum 8255C CPU @ 2.50GHz
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl eagerfpu pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single fsgsbase bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx avx512f avx512dq rdseed adx smap clflushopt clwb avx512cd avx512bw avx512vl xsaveopt xsavec xgetbv1 arat avx512_vnni
+
+Online cpus: 0
+Offline cpus: 
+BIOS frequency limitation: <Not Available>
+Frequency switch latency (ns): <Not Available>
+Available cpu frequencies: <Not Available>
+Current governor: <Not Available>
+Core performance/turbo boost: <Not Available>
+
+Memory: 4k page, physical 1882008k(63968k free), swap 0k(0k free)
+
+vm_info: OpenJDK 64-Bit Server VM (16.0.1+9) for linux-amd64 JRE (16.0.1+9), built on Jun 24 2021 09:29:00 by "mockbuild" with gcc 8.3.1 20190311 (Red Hat 8.3.1-3)
+
+END.
