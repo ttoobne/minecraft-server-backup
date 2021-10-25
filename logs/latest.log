@@ -4,6 +4,6 @@
 [00:00:01] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
 [00:00:01] [Server thread/INFO]: [Rcon: Saved the game]
 [00:00:01] [RCON Client /127.0.0.1 #6/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[00:00:30] [Server thread/INFO]: [Rcon: Automatic saving is now enabled]
-[00:00:30] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[00:00:30] [RCON Client /127.0.0.1 #7/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:00:27] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:00:27] [Server thread/INFO]: [Rcon: Automatic saving is now enabled]
+[00:00:27] [RCON Client /127.0.0.1 #7/INFO]: Thread RCON Client /127.0.0.1 shutting down
