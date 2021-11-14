@@ -866,6 +866,7 @@
       "minecraft:spider": "2021-08-11 14:15:12 +0800",
       "minecraft:piglin_brute": "2021-10-09 22:31:19 +0800",
       "minecraft:creeper": "2021-08-12 16:46:28 +0800",
+      "minecraft:wither": "2021-10-30 16:17:37 +0800",
       "minecraft:evoker": "2021-10-16 16:47:22 +0800",
       "minecraft:slime": "2021-10-23 16:30:26 +0800",
       "minecraft:phantom": "2021-10-16 17:00:05 +0800",
@@ -1112,6 +1113,12 @@
     },
     "done": true
   },
+  "minecraft:story/follow_ender_eye": {
+    "criteria": {
+      "in_stronghold": "2021-10-30 15:57:29 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/light_blue_stained_glass": {
     "criteria": {
       "has_glass": "2021-08-14 17:32:20 +0800"
@@ -1253,6 +1260,18 @@
   "minecraft:recipes/misc/blue_dye_from_cornflower": {
     "criteria": {
       "has_cornflower": "2021-08-11 09:33:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/slime_block": {
+    "criteria": {
+      "has_slime_ball": "2021-11-13 14:54:31 +0800"
+    },
+    "done": true
+  },
+  "minecraft:nether/create_beacon": {
+    "criteria": {
+      "beacon": "2021-10-30 16:35:20 +0800"
     },
     "done": true
   },
@@ -1703,6 +1722,12 @@
   "minecraft:recipes/decorations/diorite_wall": {
     "criteria": {
       "has_diorite": "2021-08-11 13:54:31 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/sticky_piston": {
+    "criteria": {
+      "has_slime_ball": "2021-11-13 14:54:31 +0800"
     },
     "done": true
   },
@@ -2446,6 +2471,12 @@
     },
     "done": true
   },
+  "minecraft:nether/summon_wither": {
+    "criteria": {
+      "summoned": "2021-10-30 16:15:53 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/quartz_stairs_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2021-08-24 13:58:39 +0800"
@@ -2811,6 +2842,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/orange_glazed_terracotta": {
+    "criteria": {
+      "has_orange_terracotta": "2021-11-13 15:50:02 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/charcoal": {
     "criteria": {
       "has_log": "2021-08-11 09:28:23 +0800"
@@ -3069,6 +3106,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/end_crystal": {
+    "criteria": {
+      "has_ender_eye": "2021-11-13 15:33:43 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/green_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2021-08-11 09:35:14 +0800"
@@ -3102,6 +3145,12 @@
   "minecraft:recipes/decorations/white_carpet": {
     "criteria": {
       "has_white_wool": "2021-08-11 09:32:17 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/ender_chest": {
+    "criteria": {
+      "has_ender_eye": "2021-11-13 15:33:43 +0800"
     },
     "done": true
   },
@@ -3552,6 +3601,12 @@
   "minecraft:recipes/redstone/acacia_trapdoor": {
     "criteria": {
       "has_planks": "2021-08-18 11:13:33 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/tools/lead": {
+    "criteria": {
+      "has_slime_ball": "2021-11-13 14:54:31 +0800"
     },
     "done": true
   },

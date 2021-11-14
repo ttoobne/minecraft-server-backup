@@ -9,7 +9,6 @@
 - '/ban-ip'
 - '/unban'
 - '/say'
-- '/give'
 - '/time'
 - '/whitelist'
 - '/pardon'
