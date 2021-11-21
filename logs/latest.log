@@ -1,25 +1,9 @@
-[00:00:01] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
 [00:00:01] [Server thread/INFO]: [Rcon: Automatic saving is now disabled]
-[00:00:01] [RCON Client /127.0.0.1 #2/INFO]: Thread RCON Client /127.0.0.1 shutting down
 [00:00:01] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:00:01] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:00:01] [RCON Client /127.0.0.1 #23/INFO]: Thread RCON Client /127.0.0.1 shutting down
 [00:00:01] [Server thread/INFO]: [Rcon: Saved the game]
-[00:00:01] [RCON Client /127.0.0.1 #3/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[00:00:34] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
-[00:00:34] [Server thread/INFO]: [Rcon: Automatic saving is now enabled]
-[00:00:34] [RCON Client /127.0.0.1 #4/INFO]: Thread RCON Client /127.0.0.1 shutting down
-[11:21:36] [User Authenticator #10/INFO]: UUID of player azhu666 is 87ea0752-0f16-407f-8964-2f8a0c002698
-[11:21:36] [Server thread/INFO]: azhu666[/223.73.73.9:5684] logged in with entity id 35994 at ([甩几把甩甩]69.22753327683654, 99.0, -70.49562043137314)
-[11:22:57] [Server thread/INFO]: azhu666 issued server command: /tp 50 61 -98
-[11:22:57] [Server thread/INFO]: [azhu666: Teleported azhu666 to 50.500000, 61.000000, -97.500000]
-[11:23:23] [Server thread/INFO]: Villager EntityVillager['Villager'/129, l='ServerLevel[甩几把甩甩]', x=61.50, y=68.00, z=-83.30] died, message: 'Villager was slain by Zombie'
-[11:26:12] [Server thread/INFO]: azhu666 issued server command: /locate dungeon
-[11:26:21] [Server thread/INFO]: azhu666 issued server command: /
-[11:33:44] [Server thread/INFO]: azhu666 lost connection: Disconnected
-[11:33:44] [Server thread/INFO]: azhu666 left the game
-[11:34:27] [User Authenticator #11/INFO]: UUID of player azhu666 is 87ea0752-0f16-407f-8964-2f8a0c002698
-[11:34:27] [Server thread/INFO]: azhu666[/223.73.73.9:5871] logged in with entity id 37490 at ([甩几把甩甩]181.294450780877, 36.0, -101.55002223514492)
-[11:36:49] [Server thread/INFO]: azhu666 issued server command: /gamemode creative
-[11:40:43] [Server thread/INFO]: azhu666 issued server command: /tp 50 61 -98
-[11:40:43] [Server thread/INFO]: [azhu666: Teleported azhu666 to 50.500000, 61.000000, -97.500000]
-[11:58:14] [Server thread/INFO]: azhu666 lost connection: Disconnected
-[11:58:14] [Server thread/INFO]: azhu666 left the game
+[00:00:01] [RCON Client /127.0.0.1 #24/INFO]: Thread RCON Client /127.0.0.1 shutting down
+[00:00:40] [RCON Listener #1/INFO]: Thread RCON Client /127.0.0.1 started
+[00:00:40] [Server thread/INFO]: [Rcon: Automatic saving is now enabled]
+[00:00:40] [RCON Client /127.0.0.1 #25/INFO]: Thread RCON Client /127.0.0.1 shutting down
