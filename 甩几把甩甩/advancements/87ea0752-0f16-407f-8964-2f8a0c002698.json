@@ -251,6 +251,12 @@
     },
     "done": true
   },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2021-11-27 15:42:40 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/cobbled_deepslate_slab": {
     "criteria": {
       "has_cobbled_deepslate": "2021-08-13 17:24:52 +0800"
@@ -290,6 +296,18 @@
   "minecraft:recipes/redstone/dark_oak_button": {
     "criteria": {
       "has_planks": "2021-10-16 16:54:46 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_stairs": {
+    "criteria": {
+      "has_purpur_block": "2021-11-27 15:30:02 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/popped_chorus_fruit": {
+    "criteria": {
+      "has_chorus_fruit": "2021-11-27 15:07:09 +0800"
     },
     "done": true
   },
@@ -374,6 +392,12 @@
   "minecraft:recipes/building_blocks/dark_oak_planks": {
     "criteria": {
       "has_log": "2021-10-16 16:07:35 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_pillar_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2021-11-27 15:30:02 +0800"
     },
     "done": true
   },
@@ -827,6 +851,12 @@
     },
     "done": true
   },
+  "minecraft:end/kill_dragon": {
+    "criteria": {
+      "killed_dragon": "2021-11-27 14:55:29 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/white_wool_from_string": {
     "criteria": {
       "has_string": "2021-08-12 16:44:39 +0800"
@@ -874,6 +904,8 @@
       "minecraft:witch": "2021-09-25 18:55:20 +0800",
       "minecraft:wither_skeleton": "2021-10-05 20:08:19 +0800",
       "minecraft:husk": "2021-08-13 22:54:22 +0800",
+      "minecraft:ender_dragon": "2021-11-27 14:55:29 +0800",
+      "minecraft:shulker": "2021-11-27 15:21:46 +0800",
       "minecraft:cave_spider": "2021-08-11 17:23:37 +0800",
       "minecraft:piglin": "2021-08-24 13:49:44 +0800",
       "minecraft:enderman": "2021-08-11 14:06:45 +0800",
@@ -888,6 +920,12 @@
   "minecraft:recipes/building_blocks/chiseled_quartz_block_from_quartz_block_stonecutting": {
     "criteria": {
       "has_quartz_block": "2021-08-24 13:58:39 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/ender_eye": {
+    "criteria": {
+      "has_blaze_powder": "2021-11-27 15:02:51 +0800"
     },
     "done": true
   },
@@ -1206,6 +1244,12 @@
   "minecraft:recipes/brewing/blaze_powder": {
     "criteria": {
       "has_blaze_rod": "2021-10-06 09:45:25 +0800"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2021-11-27 14:46:22 +0800"
     },
     "done": true
   },
@@ -1593,6 +1637,12 @@
     },
     "done": true
   },
+  "minecraft:adventure/totem_of_undying": {
+    "criteria": {
+      "used_totem": "2021-11-27 15:08:27 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/cobbled_deepslate_wall": {
     "criteria": {
       "has_cobbled_deepslate": "2021-08-13 17:24:52 +0800"
@@ -1737,6 +1787,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/brewing/magma_cream": {
+    "criteria": {
+      "has_blaze_powder": "2021-11-27 15:02:51 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/deepslate_bricks_from_cobbled_deepslate_stonecutting": {
     "criteria": {
       "has_cobbled_deepslate": "2021-08-13 17:24:52 +0800"
@@ -1804,6 +1860,12 @@
   "minecraft:recipes/misc/book": {
     "criteria": {
       "has_paper": "2021-08-18 11:18:07 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_slab": {
+    "criteria": {
+      "has_purpur_block": "2021-11-27 15:30:02 +0800"
     },
     "done": true
   },
@@ -2153,6 +2215,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/fire_charge": {
+    "criteria": {
+      "has_blaze_powder": "2021-11-27 15:02:51 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/decorations/soul_torch": {
     "criteria": {
       "has_soul_sand": "2021-10-04 00:04:01 +0800"
@@ -2300,6 +2368,12 @@
   "minecraft:recipes/tools/golden_hoe": {
     "criteria": {
       "has_gold_ingot": "2021-08-11 14:02:10 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_stairs_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2021-11-27 15:30:02 +0800"
     },
     "done": true
   },
@@ -2740,6 +2814,12 @@
   "minecraft:recipes/building_blocks/acacia_slab": {
     "criteria": {
       "has_planks": "2021-08-18 11:13:33 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/black_stained_glass_pane": {
+    "criteria": {
+      "has_glass": "2021-11-27 18:22:42 +0800"
     },
     "done": true
   },
@@ -3652,6 +3732,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/decorations/shulker_box": {
+    "criteria": {
+      "has_shulker_shell": "2021-11-27 15:21:46 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/skull_banner_pattern": {
     "criteria": {
       "has_wither_skeleton_skull": "2021-10-06 09:41:12 +0800"
@@ -3706,6 +3792,12 @@
     },
     "done": true
   },
+  "minecraft:end/find_end_city": {
+    "criteria": {
+      "in_city": "2021-11-27 15:21:17 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/brewing/brewing_stand": {
     "criteria": {
       "has_blaze_rod": "2021-10-06 09:45:25 +0800"
@@ -3721,6 +3813,12 @@
   "minecraft:recipes/combat/leather_chestplate": {
     "criteria": {
       "has_leather": "2021-08-11 09:37:56 +0800"
+    },
+    "done": true
+  },
+  "minecraft:end/enter_end_gateway": {
+    "criteria": {
+      "entered_end_gateway": "2021-11-27 15:25:11 +0800"
     },
     "done": true
   },
@@ -3976,6 +4074,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/purpur_pillar": {
+    "criteria": {
+      "has_purpur_block": "2021-11-27 15:30:02 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/dark_prismarine_stairs": {
     "criteria": {
       "has_dark_prismarine": "2021-10-16 15:05:13 +0800"
@@ -4009,6 +4113,12 @@
   "minecraft:recipes/decorations/brown_bed_from_white_bed": {
     "criteria": {
       "has_bed": "2021-08-11 09:35:14 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2021-11-27 14:46:22 +0800"
     },
     "done": true
   },
@@ -4066,6 +4176,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/stripped_jungle_wood": {
+    "criteria": {
+      "has_log": "2021-11-27 19:42:37 +0800"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/stone_stairs": {
     "criteria": {
       "has_stone": "2021-08-23 22:08:24 +0800"
@@ -4105,6 +4221,12 @@
   "minecraft:recipes/transportation/rail": {
     "criteria": {
       "has_the_recipe": "2021-10-06 10:02:39 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/purpur_slab_from_purpur_block_stonecutting": {
+    "criteria": {
+      "has_purpur_block": "2021-11-27 15:30:02 +0800"
     },
     "done": true
   },
